@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
-:root{
-    
-        --color-dark: rgb(14, 14, 14);
-        --color-dark2: rgb(32, 32, 32);
-        --color-dark3: rgb(22, 22, 22);
-        --color-white: #fff;
-        --color-green: rgb(103, 195, 80);
-        --color-green2: rgb(51, 149, 26);
-        --color-red: rgb(184, 40, 35);
-        --color-red2: rgb(146, 22, 17);
+
+:root {
+
+    --color-dark: rgb(14, 14, 14);
+    --color-dark2: rgb(32, 32, 32);
+    --color-dark3: rgb(22, 22, 22);
+    --color-white: #fff;
+    --color-green: rgb(103, 195, 80);
+    --color-green2: rgb(51, 149, 26);
+    --color-red: rgb(184, 40, 35);
+    --color-red2: rgb(146, 22, 17);
 }
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-color: var(--color-dark);
     color: var(--color-white);
     display: flex;
@@ -25,19 +27,19 @@ body{
     gap: 2rem;
 }
 
-h1{
+h1 {
     padding: 1rem;
     font-family: "Bungee Tint", sans-serif;
     font-weight: lighter;
 }
 
-#container{
+#container {
     display: flex;
     flex-direction: column;
     gap: 4rem;
 }
 
-.content-add-item{
+.content-add-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -45,18 +47,21 @@ h1{
     gap: 1rem;
 }
 
-#new-task, #btn-new-task{
+#new-task,
+#btn-new-task {
     border: none;
     font-size: 1rem;
     outline: none;
     padding: 1rem;
 }
-#new-task{
+
+#new-task {
     width: 20rem;
     border-radius: 2rem;
     text-align: center;
 }
-#btn-new-task{
+
+#btn-new-task {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -66,23 +71,58 @@ h1{
     cursor: pointer;
     transition: transform 0.4s ease;
 }
-#btn-new-task:hover{
+
+#btn-new-task:hover {
     background-color: var(--color-dark3);
     color: greenyellow;
     transform: translateY(-5px);
-} 
+}
 
-#to_do_list{
+#to_do_list {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0;
-    border: 1px solid blue;
+
 }
-#to_do_list li{
-    list-style-type:  none;
+
+#to_do_list li {
+    align-items: center;
+    list-style-type: none;
     font-size: 1.4rem;
+    padding: .8rem;
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
+    border-radius: 7rem;
+    transition: all 0.3s ease-in-out;
 }
+
+#to_do_list li:hover {
+    background-color: var(--color-dark3);
+    border-radius: 9rem;
+    padding-left: 1rem;
+}
+
+.btn-ok {
+    background-color: var(--color-green);
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+}
+
+.btn-ok:hover {
+    background-color: var(--color-green2);
+}
+
+.btn-ok svg {
+    fill: var(--color-white);
+}
+
+
