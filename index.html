@@ -10,9 +10,11 @@
 
 <body>
     <h1>To do List | Dlanor</h1>
+    <div id="container">
+        
     <div class="content-add-item">
-        <input type="text" id="new-task" placeholder="digite sua task">
-        <button id="btn-new-task">
+        <input type="text" id="new-task" placeholder="digite sua task" autocomplete="off" >
+        <button onclick="newTask()" id="btn-new-task" title="clique aqui para adicionar uma nova task">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-check2-square" viewBox="0 0 16 16">
                 <path
@@ -23,9 +25,10 @@
         </button>
     </div>
     <div class="content-body">
-        <ul class="to_do_list">
-            
+        <ul id="to_do_list">
+
         </ul>
+    </div>
     </div>
 </body>
 <script src="script.js"></script>
