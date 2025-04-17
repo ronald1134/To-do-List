@@ -35,6 +35,7 @@ function MostrarValore(){
         let taskEncoded = encodeURIComponent(task.lista);
         let li = document.createElement('li');
         
+        li.style.backgroundColor = '#680a1d'
         li.innerHTML = `
             ${task.lista}
             <button class="btn-ok" onclick="apagarItem('${taskEncoded}')">
